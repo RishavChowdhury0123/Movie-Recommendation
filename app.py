@@ -25,11 +25,11 @@ if 'filter_by' not in st.session_state:
 def load_data():
     import pandas as pd
     import pickle
-    similarities_path= r'C:\Users\DELL\Python files\Movie Recommendation\movies cleaning and similarities\similarities.pkl'
+    similarities_path= 'similarities.pkl'
     with open(similarities_path, 'rb') as ref:
         similarities= pickle.load(ref)
 
-    movie_tags_path= r'C:\Users\DELL\Python files\Movie Recommendation\movies cleaning and similarities\movie_tags.pkl'
+    movie_tags_path= 'movie_tags.pkl'
     with open(movie_tags_path, 'rb') as ref:
         movie_tags= pickle.load(ref)
     movie_tags.year= pd.to_numeric(movie_tags.year, errors='coerce')
@@ -201,7 +201,7 @@ def write_details(movie_id):
 
 similarities, movie_tags= load_data()
 
-path= r'C:\Users\DELL\Python files\Movie Recommendation\movies cleaning and similarities\movie_dicts.pkl'
+path= 'movie_dicts.pkl'
 with open(path,'rb') as fp:
     movie_dicts= pickle.load(fp)
 
