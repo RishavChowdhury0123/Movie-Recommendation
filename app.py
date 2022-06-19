@@ -1,8 +1,4 @@
 import ast
-from gettext import find
-import imghdr
-from operator import contains
-from cv2 import sort
 import pandas as pd
 import numpy as np
 import streamlit as st
