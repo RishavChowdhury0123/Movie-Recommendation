@@ -11,6 +11,7 @@ from nltk.corpus import stopwords
 from random import choice
 
 nltk.download('punkt')
+nltk.download('stopwords')
 
 if 'button1_pressed' not in st.session_state:
     st.session_state['button1_pressed']=False
