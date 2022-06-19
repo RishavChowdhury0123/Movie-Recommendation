@@ -12,6 +12,7 @@ from random import choice
 
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('wordnet')
 
 if 'button1_pressed' not in st.session_state:
     st.session_state['button1_pressed']=False
