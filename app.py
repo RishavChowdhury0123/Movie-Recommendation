@@ -235,9 +235,9 @@ with st.container():
 with st.container():
     cols= st.columns(7)
     btn=cols[0].button('Go')
-    btn2= cols[2].button('Show all movies')
-    cols[1].empty()
+    btn2= cols[1].button('Show all movies')
     cols[2].empty()
+    cols[3].empty()
     cols[4].empty()
     cols[5].empty()
     cols[6].empty()
