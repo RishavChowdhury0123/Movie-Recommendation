@@ -58,7 +58,7 @@ p > a {
 }
 
 .stTextInput > div{
-    width: 561px;
+    width: auto;
     border-color: #253535;
     background-color: transparent;
     border-radius: 25px;
