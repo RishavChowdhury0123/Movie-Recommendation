@@ -14,6 +14,8 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 
+st.set_page_config(layout="wide")
+
 if 'button1_pressed' not in st.session_state:
     st.session_state['button1_pressed']=False
 
