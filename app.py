@@ -234,8 +234,8 @@ with st.container():
 
 with st.container():
     cols= st.columns(7)
-    btn=cols[3].button('Go')
-    btn2= cols[0].button('Show all movies')
+    btn=cols[0].button('Go')
+    btn2= cols[2].button('Show all movies')
     cols[1].empty()
     cols[2].empty()
     cols[4].empty()
@@ -249,8 +249,10 @@ with st.container():
 
 if btn:
     st.session_state['button1_pressed']=True
+    st.session_state['button2_pressed']=False
 if btn2:
     st.session_state['button2_pressed']=True
+    st.session_state['button1_pressed']=False
 
 
 filters= {'All': movie_tags.genres.unique(), 'Suspense/Thrillers': ['Thriller','Mystery','Crime'], 'Drama':['Drama','Family'], 'Romance':['Romance'],
