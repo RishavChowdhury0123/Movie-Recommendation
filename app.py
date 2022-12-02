@@ -105,7 +105,7 @@ def search_for_movie(keyword):
 def display_movies_and_img(search_result_iter):
     for _ in range(10):
         with st.container() as ctr:
-            columns= st.columns(4)
+            columns= st.columns(5)
             for i, col in enumerate(columns):
                 try:
                     mov= next(search_result_iter)
