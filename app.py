@@ -161,7 +161,7 @@ def display_top_picks(genres, label):
 
     with st.container():
         st.markdown(label)
-        cols= st.columns(4)
+        cols= st.columns(5)
     for col in cols:
         next_id= next(top_pick_ids)
         col.image(fetchimages(next_id))
